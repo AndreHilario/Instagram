@@ -30,7 +30,7 @@ export default function PostFundo(props) {
             <div class="curtidas">
                 <img src={props.url} alt={props.name} />
                 <div class="texto">
-                    Curtido por <strong>{props.name}</strong> e <strong>outras 101.523 pessoas</strong>
+                    Curtido por <strong>{props.name}</strong> e <strong>outras {props.likes} pessoas</strong>
                 </div>
             </div>
         </div>

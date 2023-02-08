@@ -8,7 +8,7 @@ export default function Post2() {
         <div class="post">
             <PostTopo url="assets/img/barked.svg" name="barked" />
             <PostConteudo url="assets/img/dog.svg" name="dog" />
-            <PostFundo url="assets/img/adorable_animals.svg" name="adorable_animals" />
+            <PostFundo url="assets/img/adorable_animals.svg" name="adorable_animals" likes="99.159" />
         </div>
     )
 }
