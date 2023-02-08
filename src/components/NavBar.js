@@ -9,7 +9,7 @@ export default function NavBar() {
                         </div>
                     </ion-icon>
                     <div class="separador"></div>
-                    <img src="Assets/logo.png" alt="logo"></img>
+                    <img src="assets/img/logo.png" alt="logo"></img>
                 </div>
 
                 <div class="pesquisa">
