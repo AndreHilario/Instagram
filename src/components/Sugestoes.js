@@ -1,17 +1,22 @@
 import Sugestao from "./Sugestao"
 
 export default function Sugestoes() {
+
+    const sugestoes = [
+        {url : "assets/img/bad.vibes.memes.svg", nome : "bad.vibes.memes", status : "Segue você", acao : "Seguir"},
+        {url : "assets/img/chibirdart.svg", nome : "chibirdart", status : "Segue você", acao : "Seguir"},
+        {url : "assets/img/razoesparaacreditar.svg", nome : "razoesparaacreditar", status : "Novo no Instagram", acao : "Seguir"},
+        {url : "assets/img/adorable_animals.svg", nome : "adorable_animals", status : "Segue você", acao : "Seguir"},
+        {url : "assets/img/smallcutecats.svg", nome : "smallcutecats", status : "Segue você", acao : "Seguir"},
+    ]
     return (
         <div class="sugestoes">
             <div class="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
-            <Sugestao url="assets/img/bad.vibes.memes.svg" nome="bad.vibes.memes" status="Segue você" acao="Seguir"/>
-            <Sugestao url="assets/img/chibirdart.svg" nome="chibirdart" status="Segue você" acao="Seguir"/>
-            <Sugestao url="assets/img/razoesparaacreditar.svg" nome="razoesparaacreditar" status="Novo no Instagram" acao="Seguir"/>
-            <Sugestao url="assets/img/adorable_animals.svg" nome="adorable_animals" status="Segue você" acao="Seguir"/>
-            <Sugestao url="assets/img/smallcutecats.svg" nome="smallcutecats" status="Segue você" acao="Seguir"/>
+            
+            {sugestoes.map((c) => <Sugestao url={c.url} nome={c.nome} status={c.status} acao={c.acao} />)}
         </div>
         
     )
