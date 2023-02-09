@@ -13,11 +13,11 @@ export default function Stories(){
         {url : "assets/img/memeriagourmet.svg", text : "memeriag..."},
     ]
     return (
-        <div class="stories">
+        <div className="stories">
             {stories.map((s) => <Story url={s.url} text={s.text}/>)}
             
             <div class="setinha">
-                <ion-icon name="chevron-forward-circle" role="img" class="md hydrated" aria-label="chevron forward circle"></ion-icon>
+                <ion-icon name="chevron-forward-circle" role="img" className="md hydrated" aria-label="chevron forward circle"></ion-icon>
             </div>
         </div>
     )

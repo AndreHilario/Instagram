@@ -10,8 +10,8 @@ export default function Sugestoes() {
         {url : "assets/img/smallcutecats.svg", nome : "smallcutecats", status : "Segue você", acao : "Seguir"},
     ]
     return (
-        <div class="sugestoes">
-            <div class="titulo">
+        <div className="sugestoes">
+            <div className="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
