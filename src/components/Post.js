@@ -12,17 +12,16 @@ export default function Post(props) {
         setLike(<ion-icon onClick={retirarLike} class="like" name="heart"></ion-icon>)
         setNumber(number + 1)
     }
+
     function retirarLike() {
         setLike(like)
         setNumber(number)
     }
     
-    /* function darLikePeloPost() {
-       setLike(<ion-icon class="like" name="heart"></ion-icon>)
-    } */
     function salvarPost() {
-        setSalvo(<ion-icon onClick={retirarPostSalvo} name="bookmark"></ion-icon>)
+        setSalvo(<ion-icon onClick={retirarPostSalvo} class="salvo" name="bookmark"></ion-icon>)
     }
+
     function retirarPostSalvo() {
         setSalvo(salvo)
     }

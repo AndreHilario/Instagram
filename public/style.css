@@ -306,5 +306,8 @@ ion-icon {
 }
 
 .like {
-  color: red;
+  color: #FF0000; 
+}
+.salvo {
+  color: #000000;
 }
