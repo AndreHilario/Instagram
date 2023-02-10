@@ -304,10 +304,9 @@ ion-icon {
   padding-top: 5px;
   color: black;
 }
-
-.like {
-  color: #FF0000; 
+.red{
+  color: red; 
 }
-.salvo {
-  color: #000000;
+.black{
+  color: black;
 }
