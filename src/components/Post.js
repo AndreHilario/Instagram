@@ -4,13 +4,17 @@ export default function Post(props) {
 
     const [like, setLike] = useState(<ion-icon data-test="like-post" onClick={darLike} name="heart-outline"></ion-icon>)
 
-    const [salvo, setSalvo] = useState(<ion-icon data-test="salve-post" onClick={salvarPost} name="bookmark-outline"></ion-icon>)
+    const [salvo, setSalvo] = useState(<ion-icon data-test="save-post" onClick={salvarPost} name="bookmark-outline"></ion-icon>)
+
+    const [number, setNumber] = useState(props.likes)
 
     function darLike() {
         setLike(<ion-icon onClick={retirarLike} class="like" name="heart"></ion-icon>)
+        setNumber(number + 1)
     }
     function retirarLike() {
         setLike(like)
+        setNumber(number)
     }
     
     /* function darLikePeloPost() {
@@ -64,7 +68,7 @@ export default function Post(props) {
                 <div className="curtidas">
                     <img src={props.url3} alt={props.name3} />
                     <div className="texto">
-                        Curtido por <strong>{props.name3}</strong> e <strong>outras {props.likes} pessoas</strong>
+                        Curtido por <strong>{props.name3}</strong> e <strong>outras <span data-test="likes-number">{number}</span> pessoas</strong>
                     </div>
                 </div>
             </div>

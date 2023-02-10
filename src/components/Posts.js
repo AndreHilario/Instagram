@@ -7,17 +7,17 @@ export default function Posts() {
     {
         url : "assets/img/meowed.svg", name : "meowed",
         url2 : "assets/img/dog.svg", name2 : "dog",
-        url3 : "assets/img/respondeai.svg", name3 : "respondeai", likes : 101.523
+        url3 : "assets/img/respondeai.svg", name3 : "respondeai", likes : 101
     },
     {
         url : "assets/img/barked.svg", name : "barked",
         url2 : "assets/img/gato-telefone.svg", name2 : "gato-telefone",
-        url3 : "assets/img/adorable_animals.svg", name3 : "adorable_animals", likes : 0
+        url3 : "assets/img/adorable_animals.svg", name3 : "adorable_animals", likes : 10
     },
     {
         url : "assets/img/wawawicomics.svg", name : "wawawicomics",
         url2 : "assets/img/gato-telefone.svg", name2 : "gato-telefone",
-        url3 : "assets/img/adorable_animals.svg", name3 : "adorable_animals", likes : 0
+        url3 : "assets/img/adorable_animals.svg", name3 : "adorable_animals", likes : 50
     },
 
     ]
