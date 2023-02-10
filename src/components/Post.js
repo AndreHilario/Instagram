@@ -8,15 +8,13 @@ export default function Post(props) {
 
     const [number, setNumber] = useState(props.likes)
 
-    //const [coracao, setCoracao] = useState(<ion-icon className="none" name="heart-outline"></ion-icon>)
-
     function darLike() {
-        setLike(<ion-icon onClick={retirarLike} class="red" name="heart"></ion-icon>)
+        setLike(<ion-icon data-test="like-post" onClick={retirarLike} class="red" name="heart"></ion-icon>)
         setNumber(number + 1)
     }
 
     function darLikePost() {
-        setLike(<ion-icon onClick={retirarLike} class="red" name="heart"></ion-icon>)
+        setLike(<ion-icon data-test="like-post" onClick={retirarLike} class="red" name="heart"></ion-icon>)
         setNumber(number + 1)
     }
 
@@ -26,7 +24,7 @@ export default function Post(props) {
     }
     
     function salvarPost() {
-        setSalvo(<ion-icon onClick={retirarPostSalvo} class="black" name="bookmark"></ion-icon>)
+        setSalvo(<ion-icon data-test="save-post" onClick={retirarPostSalvo} class="black" name="bookmark"></ion-icon>)
     }
 
     function retirarPostSalvo() {
