@@ -43,7 +43,7 @@ export default function Post(props) {
                 </div>
             </div>
             <div className="conteudo">
-                <img data-test="post-image" onClick={darLike} src={props.url2} alt={props.name2} />
+                <img data-test="post-image" onDoubleClick={darLike} src={props.url2} alt={props.name2} />
             </div>
             <div className="fundo">
                 <div className="acoes">
