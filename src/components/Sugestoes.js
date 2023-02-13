@@ -16,7 +16,7 @@ export default function Sugestoes() {
                 <div>Ver tudo</div>
             </div>
             
-            {sugestoes.map((c) => <Sugestao url={c.url} nome={c.nome} status={c.status} acao={c.acao} />)}
+            {sugestoes.map((c) => <Sugestao key={c.nome} url={c.url} nome={c.nome} status={c.status} acao={c.acao} />)}
         </div>
         
     )

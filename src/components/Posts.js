@@ -23,7 +23,7 @@ export default function Posts() {
     ]
     return (
         <div className="posts">
-           {posts.map((p) => <Post url={p.url} name={p.name} url2={p.url2} name2={p.name2} url3={p.url3} name3={p.name3} likes={p.likes} />)}
+           {posts.map((p) => <Post key={p.name} url={p.url} name={p.name} url2={p.url2} name2={p.name2} url3={p.url3} name3={p.name3} likes={p.likes} />)}
         </div>
     )
 } 
